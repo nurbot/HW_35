@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HW_35">
+	<test name="Prime Number Checker">
+		<classes>
+			<class name="core.PrimeNumberCheckerTest" />
+		</classes>
+	</test>
+</suite>
+
+# 35.03 PrimeNumberChecker.java =============================================
+
+package core;
+
+public class PrimeNumberChecker {
+	public static boolean validate(int number) {
+		for (int i = 2; i < (number); i++) {if (number % i == 0) {return false;}}
+		return true;
+	}
+}
